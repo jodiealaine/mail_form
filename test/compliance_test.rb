@@ -12,6 +12,7 @@ class ComplianceTest < ActiveSupport::TestCase
 		assert_equal "sample_mail", @model.class.model_name.singular
 		assert_equal "Sample mail", @model.class.model_name.human
 	end
+	
 	test "model_name.human uses I18n" do
 		begin
 			I18n.backend.store_translations :en,
