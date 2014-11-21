@@ -9,8 +9,9 @@ class MailFormTest < ActiveSupport::TestCase
     sample.email = "user@example.com"
     assert_equal "user@example.com", sample.email
   end
-  test "sample mail can clear attributes using clear_prefix" do 
+  test "sample mail can clear attributes using clear_ prefix" do 
   	sample = SampleMail.new
+  	
   	sample.name = "User"
   	sample.email = "user@example.com"
   	assert_equal "User", sample.name
